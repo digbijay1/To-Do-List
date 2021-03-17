@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import AddIcon from "@material-ui/icons/Add";
 import ListCom from "./ListCom";
-const ToDoList = () => {
+const App = () => {
     const [item, setItem] = useState("");
     const [newitem, setNewItem] = useState([]);
     const itemEvent = (event) => {
@@ -44,4 +44,4 @@ return <ListCom key={index} text={val} />;
 );
 };
 
-export default ToDoList
+export default App
